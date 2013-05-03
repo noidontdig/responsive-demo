@@ -8,21 +8,81 @@
   font-size: 80px;
 }
 
-
 .content .hero p {
   font-size: 40px;
-  width: 700px;
+  max-width: 700px;
   float: left;
 }
 
 .content .hero img {
-  height: 180px;
+  height: auto;
   width: 180px;
   padding-top: 40px;
 }
 
 .content .columns p {
-  width: 400px;
+  max-width: 400px;
   float: left;
   padding-right: 50px;
+}
+
+.content .small {
+  display: none;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 940px) {
+
+  .content {
+    width: 700px;
+  }
+
+  .content .hero p {
+    max-width: 500px;
+    font-size: 30px;
+  }
+
+  .content .hero img {
+    width: 150px;
+  }
+
+  .content .columns p {
+    max-width: 300px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 699px) {
+
+  .content {
+    max-width: 500px;
+  }
+
+  .content h1 {
+    font-size: 40px;
+  }
+
+  .content .hero p {
+    max-width: 500px;
+    font-size: 24px;
+    float: none;
+  }
+
+  .content .hero img {
+    padding-top: 0;
+    width: 120px;
+  }
+
+  .content .columns p {
+    max-width: 500px;
+    padding-right: 0;
+  }
+
+  .content .big {
+    display: none;
+  }
+
+  .content .small {
+    display: inline;
+  }
+
 }
